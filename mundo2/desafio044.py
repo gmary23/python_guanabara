@@ -7,6 +7,7 @@ CONDIÇÃO DE PAGAMENTO:
 3- em até 2x NO CARTÃO: preço normal
 4- 3x OU MAIS no cartão: 20% de juros
 """
+print('{:=^40}'.format('LOJAS TRÊS MARIAS')) # esse comando gera esses caracteres 
 compras = int(input('Preço das compras: R$ '))
 print('''FORMAS DE PAGAMENTO
 [1] à vista DINHEIRO/CHEQUE
