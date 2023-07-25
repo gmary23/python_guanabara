@@ -1,17 +1,17 @@
 '''
-Desenvolva um programa que leia o NOME, IDADE e SEXO de 4 PESSOAS. No final do programa, mostre:
-- A MÉDIA DE IDADE do grupo.
-- Qual é o nome do homem MAIS VELHO.
-- Quantas mulheres têm MENOS DE 20 anos.
+Faça um programa que leia o peso de CINCO PESSOAS. No final, mostre qual foi o 
+MAIOR e o MENOR peso lidos.
 '''
-somaidade = 0
-mediaidade = 0
-for p in range (1, 5):
-    print('--------{}ª PESSOA ---------'.format(p))
-    nome = str(input('Nome: ')).strip() #strip -> retira espaços
-    idade = int(input('Idade: '))
-    sexo = str(input('Sexo [M/F]: ')).strip()
-    somaidade += idade
-
-mediaidade = somaidade / 4
-print('A média de idade das pessoas é de {}'.format(mediaidade))
+maior = 0
+menor = 0
+for p in range(1,6):
+    peso = float(input('Peso da {}a pessoa: '.format(p)))
+    if p == 1: # aqui só entra qdo for a primeira pessoa
+        maior = peso # maior recebe o peso
+        menor = peso # menor recebe o peso
+    else:
+        if peso > maior:
+            maior = peso
+        if peso < menor:
+            menor = peso
+print('O maior peso é {} e o menor peso é {} '.format(maior, menor))
